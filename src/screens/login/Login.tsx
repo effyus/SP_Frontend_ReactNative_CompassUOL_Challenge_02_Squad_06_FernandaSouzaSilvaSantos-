@@ -7,18 +7,24 @@ import {
   Title,
   ContentBody,
   ContentFooter,
+  Description,
 } from "./styles";
+import { ButtonSocialGoogle } from "../../components/ButtonSocialGoogle/ButtonSocialGoogle";
+import {RectButton} from 'react-native-gesture-handler';
 const Login: React.FC = () => {
   return (
     <SafeAreaView>
       <Container>
         <ContentHeader>
-          <Title>Screeen Login</Title>
+          <Title>Login</Title>
         </ContentHeader>
 
         <ContentBody></ContentBody>
 
-        <ContentFooter></ContentFooter>
+        <ContentFooter>
+          <Description>Or login with social account</Description>
+          <ButtonSocialGoogle/>
+        </ContentFooter>
       </Container>
     </SafeAreaView>
   );
